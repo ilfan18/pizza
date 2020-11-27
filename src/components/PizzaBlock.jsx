@@ -81,4 +81,6 @@ PizzaBlock.propTypes = {
   types: PropTypes.arrayOf(PropTypes.number).isRequired,
 };
 
+PizzaBlock.defaultProps = { types: [] };
+
 export default PizzaBlock;
