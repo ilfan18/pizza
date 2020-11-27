@@ -8,7 +8,11 @@ function SortPopup() {
     setVisiblePopup(!visiblePopup);
   };
 
-  const handleOutsideClick = (e) => {};
+  const handleOutsideClick = (e) => {
+    if (e.path.includes(sortRef.current)) {
+      console.log('hello');
+    }
+  };
 
   useEffect(() => {
     document.body.addEventListener('click', handleOutsideClick);
